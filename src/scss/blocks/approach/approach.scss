@@ -94,7 +94,7 @@
     }
 
     &_slash {
-        display: block;
+
       margin-top: 80px;
       font-style: normal;
       font-weight: 700;
@@ -105,13 +105,36 @@
       color: $industrial-revolution;
     }
 
-    &_progressbar {
-    display: inline-block;
-    }
+
 
     &_progressbar-1 {
-        display: block;
+      transform: translate(30px, -17px);
+      display: block;
       width: 117px;
+      height: 14px;
+      background: $holland-red
+    }
+
+    &_progressbar-2 {
+      transform: translate(30px, -17px);
+      display: block;
+      width: 99px;
+      height: 14px;
+      background: $holland-red
+    }
+
+    &_progressbar-3 {
+      transform: translate(30px, -17px);
+      display: block;
+      width: 153px;
+      height: 14px;
+      background: $holland-red
+    }
+
+    &_progressbar-4 {
+      transform: translate(30px, -17px);
+      display: block;
+      width: 303px;
       height: 14px;
       background: $holland-red
     }
