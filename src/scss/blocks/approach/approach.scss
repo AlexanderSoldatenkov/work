@@ -1,7 +1,41 @@
 .approach {
   height: 1027px;
   background: $background-eternity;
+  &__h2 {
 
+    width: 880px;
+    height: 63px;
+
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 63px;
+    color: $ambience-white;
+  }
+
+  &__btn {
+    position: absolute;
+    margin-left: -23px;
+    width: 208px;
+    height: 56px;
+    left: 1472px;
+    
+
+    /* ambience-white */
+
+    border: 2px solid $ambience-white;
+    background: $background-eternity;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-align: center;
+
+
+    color: $ambience-white;
+  }
   &__row {
     display: flex;
     flex-direction: row;
@@ -13,41 +47,7 @@
     justify-content: space-between;
     margin-bottom: 60px;
 
-    &_h2 {
-
-      width: 880px;
-      height: 63px;
-
-
-      font-style: normal;
-      font-weight: 300;
-      font-size: 46px;
-      line-height: 63px;
-      color: $ambience-white;
-    }
-
-    &_btn {
-      position: absolute;
-      margin-left: -23px;
-      width: 208px;
-      height: 56px;
-      left: 1472px;
-      top: 2281px;
-
-      /* ambience-white */
-
-      border: 2px solid $ambience-white;
-      background: $background-eternity;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 22px;
-
-      text-align: center;
-
-
-      color: $ambience-white;
-    }
+   
   }
 
   &__column {
