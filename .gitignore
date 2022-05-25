@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/experimental node
+/project
 
 # testing
 /coverage

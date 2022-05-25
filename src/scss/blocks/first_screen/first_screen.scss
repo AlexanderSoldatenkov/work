@@ -15,7 +15,7 @@ margin-top: 40px;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    color: #727272;
+    color: $industrial-revolution;
   }
 
   &__container {
@@ -32,7 +32,7 @@ margin-top: 40px;
     font-size: 54px;
     line-height: 74px;
 
-    color: #E3E3E2;
+    color: $ambience-white;
   }
 
   &__hr {
@@ -44,7 +44,7 @@ margin-top: 40px;
 
     /* balsamic-reduction */
     border: none;
-    background: #40403D;
+    background: $balsamic-reduction;
   }
 
   &__descr {
@@ -55,10 +55,7 @@ margin-top: 40px;
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-
-    /* ambience-white */
-
-    color: #E3E3E2;
+    color: $ambience-white;
   }
 
   &__anypoint {
@@ -68,7 +65,7 @@ margin-top: 40px;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    color: #E3E3E2;
+    color: $ambience-white;
   }
 
   &__slash {
@@ -79,7 +76,7 @@ margin-top: 40px;
     font-weight: 600;
     font-size: 20px;
     line-height: 27px;
-    color: #727272;
+    color: $industrial-revolution;
   }
 
   &__arrows {

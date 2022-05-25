@@ -1,7 +1,7 @@
 nav {
   height: 110px;
   width: 100%;
-  background: #282827;
+  background: $background-eternity;
   display: flex;
   flex-direction: row;
 
@@ -15,7 +15,7 @@ nav {
   left: 0px;
   top: 0px;
   z-index: -5;
-  background: #282827;
+  background: $background-eternity;
 }
 
 .menu {
@@ -39,7 +39,7 @@ nav {
     font-size: 18px;
     line-height: 25px;
     text-align: right;
-    color: #E3E3E2;
+    color: $ambience-white;
 
     a {
       text-decoration: none;
@@ -56,7 +56,7 @@ nav {
     width: 1440px;
     height: 2px;
     border: none;
-    background: #40403D;
+    background: $balsamic-reduction;
     transform: matrix(1, 0, 0, -1, 0, 0);
   }
 
@@ -85,7 +85,7 @@ nav {
     margin-left: 40px;
     width: 2px;
     height: 70px;
-    background: #40403D;
+    background: $balsamic-reduction;
     border: none;
   }
 
@@ -104,7 +104,7 @@ nav {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    color: #E3E3E2;
+    color: $ambience-white;
   }
 
   &_item {
