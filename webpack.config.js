@@ -71,6 +71,7 @@ const plugins = () => {
   ];
 
   // if (isProd) {
+    
   //   basePlugins.push(
   //     new ImageminPlugin({
   //       bail: false, // Ignore errors on corrupted images
@@ -157,14 +158,19 @@ module.exports = {
       //   exclude: /node_modules/,
       //   loader: 'babel-loader',
       // },
+      // {
+      //   test: /\.(?:|gif|png|jpg|jpeg|svg)$/,
+      //   use: [{
+      //     loader: 'file-loader',
+      //     options: {
+      //       name: `[path]${filename('[ext]')}`
+      //     }
+      //   }],
+      // },
       {
-        test: /\.(?:|gif|png|jpg|jpeg|svg)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: `[path]${filename('[ext]')}`
-          }
-        }],
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        
       },
       {
         test: /\.(?:|woff2)$/,
