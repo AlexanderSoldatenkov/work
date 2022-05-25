@@ -1,6 +1,7 @@
 .approach {
   height: 1027px;
   background: $background-eternity;
+
   &__h2 {
 
     width: 880px;
@@ -15,27 +16,17 @@
   }
 
   &__btn {
+
     position: absolute;
-    margin-left: -23px;
+    margin-left: 1230px;
     width: 208px;
     height: 56px;
-    left: 1472px;
-    
-
-    /* ambience-white */
-
-    border: 2px solid $ambience-white;
-    background: $background-eternity;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-
     text-align: center;
-
-
+    border: 2px solid $ambience-white;
+    background-color: $background-eternity;
     color: $ambience-white;
   }
+
   &__row {
     display: flex;
     flex-direction: row;
@@ -47,7 +38,7 @@
     justify-content: space-between;
     margin-bottom: 60px;
 
-   
+
   }
 
   &__column {
