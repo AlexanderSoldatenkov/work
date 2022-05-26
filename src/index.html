@@ -176,11 +176,11 @@
 
   <div class="migration" id="steps">
     <div class="container">
-      <div class="row">
+      
       <div class="migration__head">
         <div class="migration__h2">Шаги миграции</div>
         <!-- <div class="migration__btn">Заказать услугу</div> -->
-        <button class="services__btn">Заказать услугу</button>
+        <button class="services__btn" id="migration__btn">Заказать услугу</button>
       </div>
 
       <div class="migration__grid">
@@ -225,41 +225,41 @@
       <div class="migration__head_second" id="result">
         <div class="migration__h2">Результат</div>
         <!-- <div class="migration__btn">Заказать услугу</div> -->
-        <button class="services__btn">Заказать услугу</button>
+        <button class="services__btn" id="migration__btn-second">Заказать услугу</button>
       </div>
 
       <div class="migration__columns">
-        <div class="migration__column col-md-3">
+        <div class="migration__column">
           <img src="./img/migration/01.png" alt="1">
           <div class="migration__column_descr">Система успешно интегрировала и работает «как раньше»</div>
         </div>
 
-        <div class="migration__column col-md-3">
+        <div class="migration__column">
           <img src="./img/migration/02.png" alt="2">
           <div class="migration__column_descr">Комплект документов по новой архитектуре, инфораструктуре, улучшениях и
             изменениях
           </div>
         </div>
 
-        <div class="migration__column col-md-3">
+        <div class="migration__column">
           <img src="./img/migration/03.png" alt="3">
           <div class="migration__column_descr">Отсутствие потерь данных и даунтаймов</div>
         </div>
 
-        <div class="migration__column col-md-3">
+        <div class="migration__column">
           <img src="./img/migration/04.png" alt="4">
           <div class="migration__column_descr">Надежный процесс резервирования</div>
         </div>
 
       </div>
-    </div>
+    
     </div>
   </div>
 
   <div class="costs" id="costs">
     <div class="container">
       <div class="row">
-        <div class="costs__columns col-xl-6">
+        <div class="costs__columns">
           <div class="costs__columns_h2">Составляющие стоимости
             миграции</div>
           <button class="costs__columns_btn">Заказать оценку бесплатно</button>
@@ -267,7 +267,7 @@
         </div>
 
 
-        <div class="costs__columns col-xl-6">
+        <div class="costs__columns">
           <div class="costs__columns_item">
             <hr class="costs__columns_item-hr">
             <div class="costs__columns_item-name">// SLA, предоставляемый сервисом конечным пользователям</div>
@@ -308,7 +308,7 @@
             <hr class="costs__columns_item-hr">
             <div class="costs__columns_item-name">// Потребность в дополнительных опциях логирования, мониторинга, и
               т.п.</div>
-            <hr class="costs__columns_item-hr">
+            <hr class="costs__columns_item-hr" id="costs__columns_item-hr-last">
           </div>
 
         </div>
@@ -319,14 +319,14 @@
   <div class="footer" id="contacts">
     <div class="container">
       <div class="row">
-        <div class="footer__columns col-xl-6">
+        <div class="footer__columns">
           <div class="footer__columns_h2">Оставить заявку</div>
           <div class="footer__columns_descr">Готовы обсудить «куда, когда и как?» Оставляйте заявку!
             Хотите поговорить по телефону или предпочитаете почту?
             +7 (846) 205-18-04 и info@astera.in</div>
         </div>
 
-        <div class="footer__columns col-xl-6">
+        <div class="footer__columns">
           <form action="submit" class="footer__form">
             <div class="footer__input">
               <input required name="name" type="text" id="name" placeholder="Ваше имя">

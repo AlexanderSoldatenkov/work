@@ -1,6 +1,10 @@
 .footer {
   height: 842px;
-
+  &__columns {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
   &__btn {
     font-style: normal;
     font-weight: 600;

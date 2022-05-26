@@ -4,6 +4,10 @@
 
 
   &__columns {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
     &_item {
     //   margin-top: 0;
     &:first-child {
