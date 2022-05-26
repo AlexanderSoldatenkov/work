@@ -11,6 +11,7 @@
       &_item {
         margin-left: 0;
       }
+
       &_item {
         margin-left: 70px;
 
@@ -30,7 +31,7 @@
 
       img {
         position: relative;
-        margin: 0 auto;
+        // margin: 0 auto;
         margin-top: 100px;
         object-fit: cover;
         width: 100%;
@@ -428,13 +429,16 @@
 @media (max-width: 1103px) {
   .costs {
     &__columns {
+      &_h2 {
+        margin-bottom: 30px;
+      }
 
       &_item {
         margin-left: 30px;
       }
 
       img {
-        
+
         width: 420px;
         height: 520px;
       }
@@ -636,17 +640,21 @@
 
   .costs {
     min-height: 1193px;
+
     &__columns {
       &_item:first-child {
         margin-top: 69px;
-    }
+      }
+
       &_item {
         margin-left: 0;
+
         &-name::before {
-         
+
           height: 90px;
+        }
       }
-      }
+
       width: 100%;
       // &_item {
       //   margin-left: 30px;
@@ -853,15 +861,16 @@
 
   .costs {
     min-height: 1193px;
+
     &__columns {
       &_item {
-        
+
         &-name::before {
-         
+
           height: 120px;
+        }
       }
-      }
-  
+
 
     }
   }
@@ -912,6 +921,10 @@
 }
 
 @media (max-width: 567px) {
+  .costs {
+    min-height: 1235px;
+  }
+
   .services {
     &__columns {
       flex-wrap: wrap;
@@ -1016,7 +1029,33 @@
 }
 
 @media (max-width: 530px) {
+
+  .costs {
+    &__columns {
+      &_btn {
+        display: block;
+        margin: 0 auto;
+        // margin-top: 70px;
+      }
+
+      &_h2 {
+        text-align: center;
+      }
+    }
+
+   
+  }
+
+  .services {
+    &__btn {
+      display: block;
+      margin: 0 auto;
+      margin-top: 70px;
+    }
+  }
+
   .migration {
+
     &__head_second {
       flex-direction: column;
       // position: relative;
@@ -1114,6 +1153,18 @@
   }
 }
 
+@media (max-width: 512px) {
+
+  .costs {
+    &__columns {
+      &_btn {
+        margin-top: 70px;
+      }
+
+    }
+  }
+}
+
 @media (max-width: 503px) {
   .services {
     margin-top: 153px;
@@ -1126,6 +1177,7 @@
 }
 
 @media (max-width: 441px) {
+
   .services {
     &__column_head::after {
       display: none;
@@ -1161,7 +1213,34 @@
   }
 }
 
+@media (max-width: 398px) {
+
+
+  .costs {
+    min-height: 1330px;
+
+    &__columns_item-name::before {
+      height: 150px;
+    }
+
+    &__columns {
+      &_h2 {
+        font-size: 36px;
+      }
+      &_btn {
+        width: 255px;
+height: 56px;
+      }
+
+    }
+  }
+}
+
 @media (max-width: 345px) {
+  .costs {
+    min-height: 1455px;
+
+  }
 
   .menu {
     &__logo_img {
@@ -1185,6 +1264,15 @@
   //   }
   // }
 
+}
+
+@media (max-width: 334px) {
+
+  .costs {
+    &__columns_item-name::before {
+      height: 180px;
+    }
+  }
 }
 
 @media (max-width: 320px) {
