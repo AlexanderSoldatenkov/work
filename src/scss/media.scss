@@ -6,6 +6,24 @@
 }
 
 @media (max-width: 1495px) {
+
+  .footer {
+    &__columns {
+      &_descr {
+        width: 99%;
+      }
+    }
+
+    &__form {
+      // margin-top: 191px;
+      width: 100%;
+      grid-template: 42px 42px 42px/repeat(2, auto);
+      // justify-content: space-between;
+      // row-gap: 50px;
+      // column-gap: 25px;
+    }
+  }
+
   .costs {
     &__columns {
       &_item {
@@ -427,6 +445,32 @@
 }
 
 @media (max-width: 1103px) {
+
+  .footer {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+   &__form {
+     margin-top: 40px;
+   }
+    &__columns {
+      
+        width: 100%;
+      
+    }
+
+    // &__form {
+    //   // margin-top: 191px;
+    //   width: 100%;
+    //   grid-template: 42px 42px 42px/repeat(2, auto);
+    //   // justify-content: space-between;
+    //   // row-gap: 50px;
+    //   // column-gap: 25px;
+    // }
+  }
+
   .costs {
     &__columns {
       &_h2 {
@@ -702,7 +746,11 @@
     &__col-2 {
       margin-left: 32px;
     }
-  }
+  } 
+
+  .footer__columns_h2 {
+    margin-top: 65px;
+}
 
 }
 
@@ -901,6 +949,17 @@
     max-width: 580px;
   }
 
+  .footer {
+    &__wraper {
+      display: flex;
+      flex-direction: column;
+      margin: 60px auto 60px auto;
+    }
+    &__polycy {
+      margin-top: 20px;
+    }
+  }
+
   .menu {
 
     &__contacts_phone {
@@ -1043,7 +1102,7 @@
       }
     }
 
-   
+
   }
 
   .services {
@@ -1163,6 +1222,43 @@
 
     }
   }
+
+  .footer {
+    &__form {
+        display: flex;
+        flex-direction: column;
+      // display: grid;
+      // grid-template: 42px 42px 42px 42px 42px/repeat(1, auto);
+      // grid-row: 42px 42px 42px 42px 42px;
+      // grid-column: 100%;
+      // justify-content: space-between;
+      // row-gap: 50px;
+      // column-gap: 25px;
+  }
+    &__columns {
+      &_h2 {
+        text-align: center;
+      }
+      &_descr {
+        text-align: center;
+        height: 100%;
+      }
+      &__triggers {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+      }
+      
+    }
+    // &__wraper {
+    //   display: flex;
+    //   flex-direction: column;
+    //   margin: 60px auto 60px auto;
+    // }
+    // &__polycy {
+    //   margin-top: 20px;
+    // }
+  }
 }
 
 @media (max-width: 503px) {
@@ -1227,9 +1323,10 @@
       &_h2 {
         font-size: 36px;
       }
+
       &_btn {
         width: 255px;
-height: 56px;
+        height: 56px;
       }
 
     }
