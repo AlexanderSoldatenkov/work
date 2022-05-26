@@ -118,3 +118,29 @@ nav {
 
 
 }
+.hamburger {
+  display: none;
+  margin-left: 42px;
+  margin-top: 36px;
+  right: 30px;
+  height: 21px;
+  cursor: pointer;
+  &::before {
+    content: "";
+        display: block;
+        position: absolute;
+        width: 2px;
+        height: 70px;
+        transform: translate(-21px, -16px);
+        background-color: $balsamic-reduction
+  }
+
+  span {
+      display: block;
+      background-color: $ambience-white;
+      width: 30px;
+      height: 3px;
+      margin-top: 8px;
+  }
+ 
+}

@@ -72,8 +72,7 @@
     input {
       width: 100%;
       height: 100%;
-      padding: 0 20px;
-      font-family: 'Droid Serif';
+      padding: 0 0px;
       font-size: 12px;
       font-weight: bold;
 
@@ -93,14 +92,17 @@
 
     textarea {
       width: 100%;
-      //   height: 100%;
+      height: 100%;
+      padding: 10px 0 0 0;
       resize: none;
-      //   padding: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      
       display: block;
       border: none;
 
       border-bottom: 1px solid darken($titanium-white, 5%);
-      height: 100%;
+      
     }
   }
 
@@ -140,6 +142,28 @@
       top: 70px;
       left: -7px;
       text-align: left;
+
+    //   &:last-child {
+    //     position: relative;
+       
+    //     padding: 0 0px;
+    //     height: 18px;
+    //     background-color: #fff;
+
+    //     font-style: normal;
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 19px;
+    // text-align: right;
+    // text-decoration-line: underline;
+    // color: $background-eternity;
+
+        
+    //     margin-bottom: 0;
+    //     top: 0px;
+    //     left: 0px;
+    //     text-align: none;
+    //   }
 
 
     }
@@ -185,11 +209,12 @@
   }
 
   &__wraper {
-      margin-top: 80px;
-      margin-bottom: 80px;
-      display: flex;
-      justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
   }
+
   &__copyright {
     font-style: normal;
     font-weight: 400;
@@ -197,6 +222,7 @@
     line-height: 19px;
     color: $background-eternity;
   }
+
   &__polycy {
     font-style: normal;
     font-weight: 400;

@@ -17,22 +17,39 @@ import '../index.html';
 
 
 // window.addEventListener('DOMContentLoaded', function () {
-//   const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 300000);
-//   tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
-//   modal('[data-modal]', '.modal', modalTimerId);
-//   calc();
-//   cards();
-//   forms('form', modalTimerId);
-//   slider({
-//       container: '.offer__slider',
-//       nextArrow: '.offer__slider-next',
-//       previousArrow: '.offer__slider-prev',
-//       totalCounter: '#total',
-//       currentCounter: '#current',
-//       wrapper: '.offer__slider-wrapper',
-//       field: '.offer__slider-inner',
-//       slide: '.offer__slide'
-//   });
-//   timer('.timer', '2020-06-11');
+//     let element = document.getElementById("box");
+
+//     // element.addEventListener('click', () =>{
+//         element.scrollIntoView('#services');
+//     // });
+//     $(window).scroll(function () {
+//         if ($(this).scrollTop() > 1600) {
+//             $('.pageup').fadeIn();
+//         } else {
+//             $('.pageup').fadeOut();
+//         }
+//     });
+
+const menuHTML = document.getElementById('menuId');
+const linksHTML = menuHTML.querySelectorAll('a.menu_item');
+
+for (let i = 0; i < linksHTML.length; i++) {
+linksHTML[i].addEventListener('click', event => onNavLinkClick(event));
+}
+
+function onNavLinkClick(event) {
+const href = event.target.getAttribute('href');
+const blockId = href.indexOf('#services') !== -1 ? href.split('#services')[1] : '';
+
+if (!blockId) {
+return;
+}
+
+document
+.getElementById(blockId)
+.scrollIntoView({
+behavior: "smooth"
+});
+}
 
 // });

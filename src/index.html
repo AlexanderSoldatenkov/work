@@ -17,12 +17,19 @@
           <img src="./img/logo/astera_logo.png" alt="logo" class="menu__logo_img">
 
           <ul class="menu">
-            <li class="menu_item"> <a href="#about" class="menu_link">Услуги</a></li>
-            <li class="menu_item"><a href="#projects" class="menu_link">Подход</a></li>
-            <li class="menu_item"><a href="#work" class="menu_link"> Шаги</a></li>
-            <li class="menu_item"><a href="#technology" class="menu_link">Результат</a></li>
-            <li class="menu_item"><a href="#contacts" class="menu_link"> Стоимость</a></li>
+            <li class="menu_item"> <a href="#services" class="menu_link">Услуги</a></li>
+            <li class="menu_item"><a href="#approach" class="menu_link">Подход</a></li>
+            <li class="menu_item"><a href="#steps" class="menu_link"> Шаги</a></li>
+            <li class="menu_item"><a href="#result" class="menu_link">Результат</a></li>
+            <li class="menu_item"><a href="#costs" class="menu_link"> Стоимость</a></li>
             <li class="menu_item"><a href="#contacts" class="menu_link"> Контакты</a></li>
+
+            <!-- <li class="menu_item"> <a href="#services" class="menu_link">Услуги</a></li>
+            <li class="menu_item"><a href="#approach" class="menu_link">Подход</a></li>
+            <li class="menu_item"><a href="#steps" class="menu_link"> Шаги</a></li>
+            <li class="menu_item"><a href="#result" class="menu_link">Результат</a></li>
+            <li class="menu_item"><a href="#costs" class="menu_link"> Стоимость</a></li>
+            <li class="menu_item"><a href="#contacts" class="menu_link"> Контакты</a></li> -->
 
           </ul>
           <div class="menu__contacts">
@@ -33,15 +40,15 @@
           </div>
           <hr class="menu__hr">
           <a href="#"><img src="./icons/Vector.png" alt="logo" class="menu__icon"></a>
-
+          <div id="vision" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
         </nav>
 
-        <!-- <div id="vision" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div> -->
+       
       </header>
       <hr class="menu__hr-under">
 
@@ -75,7 +82,7 @@
 
   <div class="container">
 
-    <div class="services">
+    <div class="services" id="services">
       <div class="services__head">
         <h2 class="services__h2">Основные типы услуг</h2>
         <button class="services__btn">Заказать услугу</button>
@@ -107,7 +114,7 @@
 
   </div>
 
-  <div class="approach">
+  <div class="approach" id="approach">
     <div class="container">
       <div class="approach__head">
         <div class="approach__h2">Наш подход к миграции IT сервисов</div>
@@ -159,7 +166,7 @@
     </div>
   </div>
 
-  <div class="migration">
+  <div class="migration" id="steps">
     <div class="container">
       <div class="migration__head">
         <div class="migration__h2">Шаги миграции</div>
@@ -206,7 +213,7 @@
       </div>
       <div class="migration__blackline"></div>
 
-      <div class="migration__head_second">
+      <div class="migration__head_second" id="result">
         <div class="migration__h2">Результат</div>
         <!-- <div class="migration__btn">Заказать услугу</div> -->
         <button class="services__btn">Заказать услугу</button>
@@ -240,7 +247,7 @@
     </div>
   </div>
 
-  <div class="costs">
+  <div class="costs" id="costs">
     <div class="container">
       <div class="row">
         <div class="costs__columns col-xl-6">
@@ -300,7 +307,7 @@
     </div>
   </div>
 
-  <div class="footer">
+  <div class="footer" id="contacts">
     <div class="container">
       <div class="row">
         <div class="footer__columns col-xl-6">
@@ -339,10 +346,13 @@
             </div>
             <div class="footer__triggers">
               <button class="footer__btn">Отправить</button>
-              <div class="footer__policy">
+              <div class="footer__policy" id="policy">
+                
                 <input required type="checkbox">
+                <!-- <label for="checkbox"> -->
                 <span>Нажимая на кнопку, вы даете согласие на отправку
                   и <a href="/policy.html">обработку своих персональных данных</a></span>
+                <!-- </label> -->
               </div>
             </div>
           </form>

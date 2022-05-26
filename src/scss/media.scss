@@ -1,42 +1,122 @@
-@media (max-width: 1920px){
-    .container {
-        max-width: 1440px;
-    }
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1440px;
+  }
+ 
 }
 
-@media (max-width: 1440px){
-    .container {
-        max-width: 1280px;
+@media (max-width: 1495px) {
+    
+  .container {
+    max-width: 1280px;
+  }
+
+  .menu {
+    margin-left: 150px;
+    &__contacts_phone {
+      font-size: 18px;
+    //   margin-left: 60px;
     }
+
+    &_item {
+      font-size: 14px;
+      line-height: 19px;
+    //   margin-left: 150px;
+    }
+    &__hr-under {
+        width: auto;
+    }
+  }
+
+  // .costs__columns col-md-6 {
+
+  // }
 }
 
-@media (max-width: 1280px){
-    .container {
-        max-width: 1160px;
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1160px;
+  }
+  .menu {
+    margin-left: 150px;
+    &__contacts_phone {
+      font-size: 18px;
+      margin-left: 35px;
     }
+
+    &_item {
+      font-size: 14px;
+      line-height: 19px;
+      padding-left: 40px;
+      &:first-child {
+        padding-left: 0px;
+      }
+    }
+  }
 }
 
-@media (max-width: 1024px){
-    .container {
-        max-width: 940px;
+@media (max-width: 1173px) {
+    // nav {
+    //     display: flex;
+    //     justify-content: space-around;
+    // }
+    .menu {
+      margin-left: 80px;
+      
+  
+      &_item {
+       
+        padding-left: 40px;
+        &:first-child {
+          padding-left: 0px;
+        }
+      }
     }
+  }
+
+@media (max-width: 1103px) {
+  .container {
+    max-width: 940px;
+  }
+  
+  .menu {
+    display: none;
+    &__contacts_phone {
+        margin-left: 420px;
+      }
+   
+  }
+  .hamburger {
+    display: block;
+    
+  }
 }
 
-@media (max-width: 960px){
-    .container {
-        max-width: 876px;
-    }
+@media (max-width: 963px) {
+  .container {
+    max-width: 876px;
+  }
+  .menu {
+    
+    &__contacts_phone {
+        margin-left: 335px;
+      }
+   
+  }
+//   nav {
+//       display: flex;
+//       justify-content: space-between;
+//   }
 }
 
-@media (max-width: 640px){
-    .container {
-        max-width: 580px;
-    }
+@media (max-width: 640px) {
+  .container {
+    max-width: 580px;
+  }
 }
 
-@media (max-width: 320px){
-    .container {
-        max-width: 290px;
-    }
+@media (max-width: 320px) {
+  .container {
+    max-width: 290px;
+  }
 }
-
