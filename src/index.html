@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
   <!-- <link rel="stylesheet" href="./css/main.css"> -->
 </head>
 
@@ -51,9 +52,9 @@
        
       </header>
       <hr class="menu__hr-under">
-
-      <div class="itmigration__container">
-
+      
+      <div class="itmigration__container ">
+        
         <div class="itmigration__col-1">
           <div class="itmigration__prev">улучшаем ваш бизнес</div>
           <h1 class="itmigration__h1">Миграция IT инфраструктуры
@@ -75,20 +76,21 @@
 
       </div>
       <hr class="menu__hr-under">
-      <img src="./img/itmigration.png" alt="itmigration" class="itmigration__imgbig">
+      <img src="./img/itmigration.png" alt="itmigration" class="itmigration__imgbig col-md-12">
 
     </div>
   </div>
 
   <div class="container">
-
+    <div class="row">
     <div class="services" id="services">
       <div class="services__head">
         <h2 class="services__h2">Основные типы услуг</h2>
-        <button class="services__btn">Заказать услугу</button>
+        <button class="services__btn" id="services__btn">Заказать услугу</button>
       </div>
 
       <div class="services__columns">
+        
         <div class="services__column">
           <img src="./img/services/Lift and shift.png" alt="Lift and shift">
           <div class="services__column_head">Lift and shift</div>
@@ -109,19 +111,21 @@
           <div class="services__column_descr">Миграция сервиса без значительных изменений, но используя возможности
             и преимущества новой платформы</div>
         </div>
+      
       </div>
     </div>
-
+  </div>
   </div>
 
   <div class="approach" id="approach">
     <div class="container">
+      
       <div class="approach__head">
         <div class="approach__h2">Наш подход к миграции IT сервисов</div>
-        <button class="approach__btn">Заказать услугу</button>
+        <button class="approach__btn" id="approach__btn">Заказать услугу</button>
       </div>
       <hr class="menu__hr-under">
-
+      
       <div class="approach__row">
         <div class="approach__column">
 
@@ -160,14 +164,16 @@
           <div class="approach__column_descr">Учитываем ваши приоритеты и особенности задачи, думаем о безопасности в
             условиях новой инфраструктуры</div>
         </div>
-      </div>
+      
+    </div>
       <hr class="menu__hr-under">
-
+    
     </div>
   </div>
 
   <div class="migration" id="steps">
     <div class="container">
+      <div class="row">
       <div class="migration__head">
         <div class="migration__h2">Шаги миграции</div>
         <!-- <div class="migration__btn">Заказать услугу</div> -->
@@ -175,7 +181,7 @@
       </div>
 
       <div class="migration__grid">
-        <div class="migration__grid_element">
+        <div class="migration__grid_element col-md-6">
           <img src="./img/migration/workplace-team-cooperation-businesswoman-laptop-office 1.png" alt="investigation">
           <div class="migration__grid_element-header">//01 Исследование и оценка</div>
           <div class="migration__grid_element-progresbar-1"></div>
@@ -184,7 +190,7 @@
           </div>
         </div>
 
-        <div class="migration__grid_element">
+        <div class="migration__grid_element col-md-6">
           <img src="./img/migration/computer-program-coding-screen 1.png" alt="investigation">
           <div class="migration__grid_element-header">//02 Проектирование</div>
           <div class="migration__grid_element-progresbar-2"></div>
@@ -193,7 +199,7 @@
           </div>
         </div>
 
-        <div class="migration__grid_element">
+        <div class="migration__grid_element col-md-6">
           <img src="./img/migration/annie_spratt_Qckxruozj_Rg_unsplash_87da4c3b45 1.png" alt="investigation">
           <div class="migration__grid_element-header">//03 Миграция</div>
           <div class="migration__grid_element-progresbar-3"></div>
@@ -202,7 +208,7 @@
             резервное копирование и т.д.). Делаем ревизию CI/CD-процессов</div>
         </div>
 
-        <div class="migration__grid_element">
+        <div class="migration__grid_element col-md-6">
           <img src="./img/migration/closeup-working-table-workplace-office 1.png" alt="investigation">
           <div class="migration__grid_element-header">//04 Тестирование и документирование</div>
           <div class="migration__grid_element-progresbar-4"></div>
@@ -220,30 +226,30 @@
       </div>
 
       <div class="migration__columns">
-        <div class="migration__column">
+        <div class="migration__column col-md-3">
           <img src="./img/migration/01.png" alt="1">
           <div class="migration__column_descr">Система успешно интегрировала и работает «как раньше»</div>
         </div>
 
-        <div class="migration__column">
+        <div class="migration__column col-md-3">
           <img src="./img/migration/02.png" alt="2">
           <div class="migration__column_descr">Комплект документов по новой архитектуре, инфораструктуре, улучшениях и
             изменениях
           </div>
         </div>
 
-        <div class="migration__column">
+        <div class="migration__column col-md-3">
           <img src="./img/migration/03.png" alt="3">
           <div class="migration__column_descr">Отсутствие потерь данных и даунтаймов</div>
         </div>
 
-        <div class="migration__column">
+        <div class="migration__column col-md-3">
           <img src="./img/migration/04.png" alt="4">
           <div class="migration__column_descr">Надежный процесс резервирования</div>
         </div>
 
       </div>
-
+    </div>
     </div>
   </div>
 
@@ -367,7 +373,7 @@
       
     </div>
 
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
     <script src="js/main.js"></script>
 </body>
 

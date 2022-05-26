@@ -2,29 +2,88 @@
   .container {
     max-width: 1440px;
   }
- 
+
 }
 
 @media (max-width: 1495px) {
-    
+  .services {
+    &__column {
+      &:nth-child(2) {
+        margin-left: 70px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 70px;
+      }
+    }
+  }
+
+  .itmigration {
+    &__imgbig {
+      position: relative;
+      margin: 0 auto;
+      margin-top: 40px;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__hr {
+      margin-left: 38px;
+    }
+
+    &__h1 {
+      font-size: 46px;
+      line-height: 63px;
+    }
+  }
+
+  .services {
+    margin-top: 380px;
+  }
+
   .container {
     max-width: 1280px;
   }
 
+  .services {
+    &__btn {
+      position: relative;
+      margin-left: 0;
+    }
+  }
+
+  .approach {
+    &__btn {
+      position: relative;
+      margin-left: 0;
+    }
+    &__column {
+
+      width: 50%;
+      &_descr {
+        width: 100%;
+        
+      }
+    }
+  }
+
   .menu {
     margin-left: 150px;
+
     &__contacts_phone {
       font-size: 18px;
-    //   margin-left: 60px;
+      //   margin-left: 60px;
     }
 
     &_item {
       font-size: 14px;
       line-height: 19px;
-    //   margin-left: 150px;
+      //   margin-left: 150px;
     }
+
     &__hr-under {
-        width: auto;
+      width: auto;
     }
   }
 
@@ -37,8 +96,40 @@
   .container {
     max-width: 1160px;
   }
+
+  .services {
+    margin-top: 310px;
+
+    &__column {
+      margin-left: 30px;
+
+      &:nth-child(2) {
+        margin-left: 30px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 30px;
+      }
+
+      &::before {
+        transform: translate(-28px, -40px);
+      }
+    }
+  }
+
+  .itmigration {
+    &__hr {
+      margin-left: 0px;
+    }
+
+    &__h1 {
+      width: 783px;
+    }
+  }
+
   .menu {
     margin-left: 150px;
+
     &__contacts_phone {
       font-size: 18px;
       margin-left: 35px;
@@ -48,6 +139,7 @@
       font-size: 14px;
       line-height: 19px;
       padding-left: 40px;
+
       &:first-child {
         padding-left: 0px;
       }
@@ -56,39 +148,133 @@
 }
 
 @media (max-width: 1173px) {
-    // nav {
-    //     display: flex;
-    //     justify-content: space-around;
-    // }
-    .menu {
-      margin-left: 80px;
-      
-  
-      &_item {
-       
-        padding-left: 40px;
-        &:first-child {
-          padding-left: 0px;
-        }
+
+  // nav {
+  //     display: flex;
+  //     justify-content: space-around;
+  // }
+  .itmigration {
+    &__col-2 {
+      margin-left: 26px;
+    }
+
+    &__h1 {
+      width: 752px;
+    }
+  }
+
+  .menu {
+    margin-left: 80px;
+
+
+    &_item {
+
+      padding-left: 40px;
+
+      &:first-child {
+        padding-left: 0px;
       }
     }
   }
 
+  .services {
+
+    &__column {
+      &_descr {
+        width: 347px;
+      }
+
+      margin-left: 8px;
+
+      &:nth-child(2) {
+        margin-left: 8px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 8px;
+      }
+
+      &::before {
+        transform: translate(-28px, -40px);
+      }
+    }
+  }
+}
+
 @media (max-width: 1103px) {
+  .approach {
+    &__h2 {
+      height: 100%;
+    }
+  }
+  .services {
+
+    &__column {
+      width: 33%;
+
+      &_descr {
+        width: 347px;
+        width: 85%;
+      }
+
+      margin-left: 8px;
+
+      &:nth-child(2) {
+        margin-left: 8px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 8px;
+      }
+
+      &::before {
+        transform: translate(-28px, -40px);
+      }
+    }
+  }
+
+  .background__header {
+
+    height: 849px;
+  }
+
   .container {
     max-width: 940px;
   }
-  
+
+  .itmigration {
+    &__hr {
+      margin-left: 46px;
+    }
+
+    &__col-2 {
+      margin-left: 60px;
+    }
+
+    &__prev {
+      margin-top: 60px;
+    }
+
+    &__h1 {
+      width: 522px;
+      height: 252px;
+      // margin-bottom: 15px;
+      margin-top: 20px;
+    }
+  }
+
   .menu {
     display: none;
+
     &__contacts_phone {
-        margin-left: 420px;
-      }
-   
+      margin-left: 420px;
+    }
+
   }
+
   .hamburger {
     display: block;
-    
+
   }
 }
 
@@ -96,23 +282,294 @@
   .container {
     max-width: 876px;
   }
-  .menu {
-    
-    &__contacts_phone {
-        margin-left: 335px;
-      }
-   
+
+  .itmigration {
+    &__h1 {
+      width: 427px;
+    }
   }
-//   nav {
-//       display: flex;
-//       justify-content: space-between;
-//   }
+
+  .menu {
+
+    &__contacts_phone {
+      margin-left: 335px;
+    }
+
+  }
+
+  //   nav {
+  //       display: flex;
+  //       justify-content: space-between;
+  //   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 861px) {
+  .approach {
+    &__h2 {
+      width: auto;
+    }
+    &__h2 {
+      margin-right: 20px;
+    }
+  }
+  .services {
+    margin-top: 238px;
+  }
+
+  .menu {
+
+    &__contacts_phone {
+      margin-left: 245px;
+    }
+
+  }
+
+  .itmigration {
+    &__hr {
+      margin-left: 0;
+    }
+
+    &__h1 {
+      width: 409px;
+      font-size: 42px;
+    }
+
+    &__col-2 {
+      margin-left: 32px;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  .approach {
+    min-height: 1158px;
+    &__head {
+      flex-direction: column;
+      // position: relative;
+    }
+    #approach__btn {
+      
+     
+      margin-top: 20px;
+    }
+    &__column_progressbar-4 {
+      width: 209px;
+    }
+  }
+  .services {
+    
+      min-height: 768px;
+    &__head {
+      flex-direction: column;
+    }
+
+    #services__btn {
+      
+      margin-top: 20px;
+      
+    }
+
+  }
+
+  .menu {
+
+    &__contacts_phone {
+      margin-left: 180px;
+    }
+
+  }
+
+  .itmigration {
+    &__hr {
+      display: none;
+    }
+
+    &__h1 {
+      width: 100%;
+      height: 100%;
+      line-height: 57px;
+    }
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__anypoint {
+      margin-top: 40px;
+
+    }
+
+    &__descr {
+      width: 100%;
+    }
+
+    &__col-2 {
+      margin-left: 0;
+    }
+
+    &__arrows {
+      margin-top: 32px;
+      margin-bottom: 38px;
+    }
+  }
+
+}
+
+@media (max-width: 702px) {
+
+  .menu {
+
+    &__contacts_phone {
+      margin-left: 95px;
+    }
+
+  }
+
+  .background__header {
+
+    height: 912px;
+  }
+
+}
+
+@media (max-width: 644px) {
   .container {
     max-width: 580px;
   }
+
+  .menu {
+
+    &__contacts_phone {
+      margin-left: 45px;
+    }
+
+  }
+
+  // .itmigration {
+  //   &__imgbig {
+
+  //     object-fit: cover;
+  //     width: 580px;
+  //     height: 580px;
+  //   }
+  // }
+}
+
+@media (max-width: 567px) {
+  .services {
+    // &__head {
+    //   height: 100%;
+    // }
+    &__h2 {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+
+    }
+    margin-top: 201px;
+    #services__btn {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      
+    }
+  }
+
+  .approach {
+    &__h2 {
+      font-size: 36px;
+line-height: 49px;
+text-align: center;
+    }
+    #approach__btn {
+      
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+ 
+    &__row {
+      
+      flex-direction: column;
+    }
+    &__column {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      
+    }
+    &__column:nth-child(even) {
+      margin-left: auto;
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .menu {
+    &__hr {
+      display: none;
+    }
+
+    &__icon {
+      margin-left: 0;
+    }
+
+    &__logo_img {
+      margin: 0 auto;
+      margin-top: 37px;
+    }
+
+    &__contacts_phone {
+      display: none;
+    }
+
+  }
+
+  .itmigration {
+    &__h1 {
+      font-size: 36px;
+    }
+  }
+
+}
+
+@media (max-width: 503px) {
+  .services {
+    margin-top: 153px;
+
+    &__h2 {
+      font-size: 36px;
+      line-height: 49px;
+    }
+  }
+}
+
+@media (max-width: 345px) {
+
+  .menu {
+    &__logo_img {
+      width: 120px;
+      height: 34px;
+    }
+  }
+
+  .itmigration {
+    &__h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+
+  
+
+  // .hamburger {
+  //   &::before {
+  //     display: none;
+  //   }
+  // }
+
 }
 
 @media (max-width: 320px) {

@@ -30,7 +30,7 @@ import '../index.html';
 //         }
 //     });
 
-const menuHTML = document.getElementById('menuId');
+const menuHTML = document.getElementById('.menu');
 const linksHTML = menuHTML.querySelectorAll('a.menu_item');
 
 for (let i = 0; i < linksHTML.length; i++) {
@@ -39,7 +39,7 @@ linksHTML[i].addEventListener('click', event => onNavLinkClick(event));
 
 function onNavLinkClick(event) {
 const href = event.target.getAttribute('href');
-const blockId = href.indexOf('#services') !== -1 ? href.split('#services')[1] : '';
+const blockId = href.indexOf('#') !== -1 ? href.split('#')[1] : '';
 
 if (!blockId) {
 return;
