@@ -65,6 +65,9 @@
     
 
     &_header {
+      position: relative;
+      display: inline;
+
       margin-top: 40px;
       font-style: normal;
       font-weight: 700;
@@ -74,6 +77,26 @@
       color: $ambience-white;
 
     }
+    &_header::after {
+      content: attr(data-progress);
+      position: absolute;
+      top: -22px;
+      left: 0;
+      font-size: 14px;
+      // background: #ccc;
+      width: 20px;
+    }
+    &_header::before {
+      content: '';
+      position: absolute;
+      top: -32px;
+      left: 30px;
+      font-size: 14px;
+      background: $holland-red;
+      height: 14px;
+      right: 0;
+    }
+
 
     &_descr {
       margin-top: 30px;
