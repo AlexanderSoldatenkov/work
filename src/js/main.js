@@ -29,27 +29,87 @@ import '../index.html';
 //             $('.pageup').fadeOut();
 //         }
 //     });
+// });
 
-const menuHTML = document.getElementById('.menu');
-const linksHTML = menuHTML.querySelectorAll('a.menu_item');
+//Hidden menu
+
+const hamburger = document.querySelector('.hamburger'),
+  hiddenmenu = document.querySelector('.hiddenmenu'),
+  hiddenmenulink = document.querySelector('.hiddenmenu__list'),
+  closeElem = document.querySelector('.hiddenmenu__close'),
+  closeThankyou = document.querySelector('.modal__close');
+
+hamburger.addEventListener('click', () => {
+  hiddenmenu.classList.add('active');
+});
+
+closeElem.addEventListener('click', () => {
+  hiddenmenu.classList.remove('active');
+});
+
+hiddenmenulink.addEventListener('click', () => {
+  hiddenmenu.classList.remove('active');
+});
+
+//Slow scroll
+
+const menuHTML = document.getElementById('.menu_item');
+const linksHTML = menuHTML.querySelectorAll('a.menu_link');
 
 for (let i = 0; i < linksHTML.length; i++) {
-linksHTML[i].addEventListener('click', event => onNavLinkClick(event));
+  linksHTML[i].addEventListener('click', event => onNavLinkClick(event));
 }
 
 function onNavLinkClick(event) {
-const href = event.target.getAttribute('href');
-const blockId = href.indexOf('#') !== -1 ? href.split('#')[1] : '';
+  const href = event.target.getAttribute('href');
+  const blockId = href.indexOf('#') !== -1 ? href.split('#')[1] : '';
 
-if (!blockId) {
-return;
+  if (!blockId) {
+    return;
+  }
+
+  document
+    .getElementById(blockId)
+    .scrollIntoView({
+      behavior: "smooth"
+    });
 }
 
-document
-.getElementById(blockId)
-.scrollIntoView({
-behavior: "smooth"
-});
-}
+// $(document).ready(function () {
+// // Smooth scroll and page up
+// $(window).scroll(function () {
+//     if ($(this).scrollTop() > 1600) {
+//         $('.pageup').fadeIn();
+//     } else {
+//         $('.pageup').fadeOut();
+//     }
+// });
 
+
+// Mail sender
+// $('form').submit(function (e) {
+//     e.preventDefault();
+
+//     // if (!$(this).valid()) {
+//     //     return;
+//     // }
+
+//     $.ajax({
+//         type: "POST",
+//         url: "mailer/smart.php",
+//         data: $(this).serialize()
+//     }).done(function () {
+//         $(this).find("input").val("");
+//         // $('#consultation, #order').fadeOut();
+//         $('.overlay__thankyou, #thanks').fadeIn('slow');
+
+//         $('form').trigger('reset');
+//     });
+
+//     closeThankyou.addEventListener('click', () => {
+//         $('.overlay__thankyou, #thanks').fadeOut();
+//     });
+
+//     return false;
+// });
 // });

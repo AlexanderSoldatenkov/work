@@ -284,7 +284,7 @@
       }
 
       &:nth-child(3) {
-        margin-left: 30px;
+        margin-left: 6px;
       }
 
       &::before {
@@ -714,6 +714,12 @@
   }
 
   .approach {
+    min-height: 1046px;
+
+    &__column_progressbar-4 {
+      width: 225px;
+    }
+
     &__h2 {
       width: auto;
     }
@@ -721,7 +727,11 @@
     &__h2 {
       margin-right: 20px;
     }
+
+
   }
+
+
 
   .services {
     margin-top: 238px;
@@ -757,6 +767,19 @@
 }
 
 @media (max-width: 767px) {
+
+  .hiddenmenu {
+    &__block {
+      width: 293px;
+      padding-left: 33px;
+    }
+
+    &__link {
+      font-size: 23px;
+    }
+
+  }
+
   .migration {
     &__head {
       flex-direction: column;
@@ -812,7 +835,11 @@
   }
 
   .approach {
-    min-height: 1158px;
+    min-height: 1260px;
+
+    &__row {
+      min-height: 415px;
+    }
 
     &__head {
       flex-direction: column;
@@ -909,6 +936,18 @@
 
 @media (max-width: 670px) {
 
+  .approach {
+    &__column_progressbar-4 {
+      width: 157px;
+    }
+  }
+
+  .services {
+    &__h2 {
+      width: 100%;
+    }
+  }
+
   .costs {
     min-height: 1193px;
 
@@ -960,6 +999,7 @@
 
     &__polycy {
       margin-top: 20px;
+      text-align: center;
     }
   }
 
@@ -1028,6 +1068,7 @@
   }
 
   .approach {
+    min-height: 1834px;
     &__h2 {
       font-size: 36px;
       line-height: 49px;
@@ -1050,6 +1091,24 @@
       display: block;
       margin: 0 auto;
       width: 100%;
+
+      &:nth-child(1) {
+        
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 95%;
+          height: 2px;
+          transform: translate(0px, 30px);
+          background-color: $balsamic-reduction
+            /* balsamic-reduction */
+
+
+            // transform: rotate(-180deg);
+        }
+      }
 
     }
 
@@ -1230,6 +1289,7 @@
     &__copyright {
       text-align: center;
     }
+
     &__input {
       input {
         outline: none;
@@ -1238,13 +1298,13 @@
       }
     }
 
-      &__textarea { 
-        textarea {
+    &__textarea {
+      textarea {
         // padding-bottom:-10;
         // padding-top: 0;
         outline: none;
-    }
       }
+    }
 
     &__policy {
       margin-top: 20px;

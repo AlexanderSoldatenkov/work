@@ -29,6 +29,16 @@
       }
 
       &-header {
+        display: flex;
+        gap: 10px;
+
+        div {
+          flex-grow: 1;
+          background: $holland-red;
+          margin: 2px 0;
+
+        }
+
         margin-top: 36px;
         font-style: normal;
         font-weight: 700;
@@ -146,15 +156,12 @@
   }
 
   &__blackline {
-    // position: absolute;
+ 
     width: 100%;
     // width: 1659px;
     height: 14px;
-    left: 240px;
+    // left: 240px;
     margin-top: 120px;
-
-    /* eternity */
-
     background: $background-eternity;
   }
 
@@ -177,9 +184,10 @@
     &:nth-child(3) {
       margin-left: 102px;
     }
+
     &:nth-child(4) {
-        margin-left: 102px;
-      }
+      margin-left: 102px;
+    }
 
     &::before {
       content: "";
@@ -207,12 +215,12 @@
       text-transform: uppercase;
       color: $background-eternity;
 
-      
+
     }
 
     &_descr {
-        margin-top: 60px;
-      width: 258px;
+      margin-top: 60px;
+      width: 246px;
       height: 90px;
       font-style: normal;
       font-weight: 400;
