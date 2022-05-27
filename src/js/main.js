@@ -51,9 +51,16 @@ hiddenmenulink.addEventListener('click', () => {
   hiddenmenu.classList.remove('active');
 });
 
-//Slow scroll
+//hover
+// hamburger.addEventListener('focus', () => {
+//   hamburgerSpan.classList.add('onhover');
+// });
+// ,
+//   hamburgerSpan = document.querySelector('.hamburger span')
 
-const menuHTML = document.getElementById('.menu_item');
+//Slow scroll main menu
+
+const menuHTML = document.getElementById('menu');
 const linksHTML = menuHTML.querySelectorAll('a.menu_link');
 
 for (let i = 0; i < linksHTML.length; i++) {
@@ -61,6 +68,7 @@ for (let i = 0; i < linksHTML.length; i++) {
 }
 
 function onNavLinkClick(event) {
+  event.preventDefault();
   const href = event.target.getAttribute('href');
   const blockId = href.indexOf('#') !== -1 ? href.split('#')[1] : '';
 

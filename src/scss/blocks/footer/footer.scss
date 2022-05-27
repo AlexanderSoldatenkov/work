@@ -1,10 +1,12 @@
 .footer {
   height: 842px;
+
   &__columns {
     display: flex;
     flex-direction: column;
     width: 50%;
   }
+
   &__btn {
     font-style: normal;
     font-weight: 600;
@@ -16,6 +18,7 @@
     height: 56px;
     background-color: #fff;
     border: 2px solid $background-eternity;
+
   }
 
   &__policy {
@@ -79,7 +82,7 @@
       padding: 0 0px;
       font-size: 12px;
       font-weight: bold;
-
+      outline: none;
       display: block;
       border: none;
 
@@ -101,12 +104,12 @@
       resize: none;
       font-size: 12px;
       font-weight: bold;
-      
+
       display: block;
       border: none;
 
       border-bottom: 1px solid darken($titanium-white, 5%);
-      
+
     }
   }
 
@@ -147,27 +150,27 @@
       left: -7px;
       text-align: left;
 
-    //   &:last-child {
-    //     position: relative;
-       
-    //     padding: 0 0px;
-    //     height: 18px;
-    //     background-color: #fff;
+      //   &:last-child {
+      //     position: relative;
 
-    //     font-style: normal;
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 19px;
-    // text-align: right;
-    // text-decoration-line: underline;
-    // color: $background-eternity;
+      //     padding: 0 0px;
+      //     height: 18px;
+      //     background-color: #fff;
 
-        
-    //     margin-bottom: 0;
-    //     top: 0px;
-    //     left: 0px;
-    //     text-align: none;
-    //   }
+      //     font-style: normal;
+      // font-weight: 400;
+      // font-size: 14px;
+      // line-height: 19px;
+      // text-align: right;
+      // text-decoration-line: underline;
+      // color: $background-eternity;
+
+
+      //     margin-bottom: 0;
+      //     top: 0px;
+      //     left: 0px;
+      //     text-align: none;
+      //   }
 
 
     }
@@ -236,5 +239,32 @@
     text-align: right;
     text-decoration-line: underline;
     color: $background-eternity;
+
+    &:hover {
+      color: $holland-red;
+    }
+
+
+  }
+
+  &__policy {
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 19px;
+    // // text-align: right;
+
+    color: $background-eternity;
+
+    span {
+
+      a {
+        text-decoration-line: none;
+
+        &:hover {
+          color: $holland-red;
+        }
+      }
+    }
   }
 }

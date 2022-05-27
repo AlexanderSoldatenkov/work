@@ -3,16 +3,18 @@
   display: flex;
   flex-direction: column;
   min-height: 681px;
+
   &__redsquare {
     display: none;
     margin: 30px auto 0 auto;
-    
+
     background-color: $holland-red;
-   
+
     width: 14px;
     height: 14px;
-    
+
   }
+
   &__head {
     display: flex;
     justify-content: space-between;
@@ -28,11 +30,13 @@
     margin-left: 40px;
     display: flex;
     flex-direction: column;
+
     &:nth-child(2) {
-        margin-left: 120px;
+      margin-left: 120px;
     }
+
     &:nth-child(3) {
-        margin-left: 120px;
+      margin-left: 120px;
     }
 
     &::before {
@@ -60,11 +64,12 @@
 
       text-transform: uppercase;
       color: $background-eternity;
+
       &::after {
         content: "";
         display: block;
         position: absolute;
-      
+
         transform: translate(0px, 29px);
         background-color: $holland-red;
         width: 14px;
@@ -74,7 +79,7 @@
     }
 
     &_descr {
-        margin-top: 123px;
+      margin-top: 123px;
       width: 360px;
       height: 60px;
       font-style: normal;
@@ -97,12 +102,17 @@
   }
 
   &__btn {
-      position: absolute;
-      margin-left: 1230px;
+    position: absolute;
+    margin-left: 1230px;
     width: 208px;
     height: 56px;
     text-align: center;
     border: 2px solid $background-eternity;
     background-color: #fff;
+
+    &:hover {
+      border-color: $holland-red;
+      color: $holland-red;
+    }
   }
 }

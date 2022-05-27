@@ -17,7 +17,7 @@
         <svg width="29" height="30" viewbox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
-            fill="black" />
+            fill="white" />
         </svg>
 
       </div>
@@ -55,21 +55,13 @@
 
           <img src="./img/logo/astera_logo.png" alt="logo" class="menu__logo_img">
 
-          <ul class="menu">
+          <ul class="menu" id="menu">
             <li class="menu_item"> <a href="#services" class="menu_link">Услуги</a></li>
             <li class="menu_item"><a href="#approach" class="menu_link">Подход</a></li>
             <li class="menu_item"><a href="#steps" class="menu_link"> Шаги</a></li>
             <li class="menu_item"><a href="#result" class="menu_link">Результат</a></li>
             <li class="menu_item"><a href="#costs" class="menu_link"> Стоимость</a></li>
             <li class="menu_item"><a href="#contacts" class="menu_link"> Контакты</a></li>
-
-            <!-- <li class="menu_item"> <a href="#services" class="menu_link">Услуги</a></li>
-            <li class="menu_item"><a href="#approach" class="menu_link">Подход</a></li>
-            <li class="menu_item"><a href="#steps" class="menu_link"> Шаги</a></li>
-            <li class="menu_item"><a href="#result" class="menu_link">Результат</a></li>
-            <li class="menu_item"><a href="#costs" class="menu_link"> Стоимость</a></li>
-            <li class="menu_item"><a href="#contacts" class="menu_link"> Контакты</a></li> -->
-
           </ul>
           <div class="menu__contacts">
             <a href="#">
@@ -77,12 +69,26 @@
             </a>
 
           </div>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+
           <hr class="menu__hr">
           <a href="#"><img src="./icons/Vector.png" alt="logo" class="menu__icon"></a>
           <div id="vision" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="hamburger__hover"></span>
+            <span class="hamburger__hover"></span>
+            <span class="hamburger__hover"></span>
           </div>
         </nav>
 
@@ -382,19 +388,19 @@
               </div>
 
               <div class="footer__input">
-                <input required name="phone" type="text" id="phone" placeholder="+3 355 152-41-33">
+                <input required name="phone" type="phone" id="phone" placeholder="+3 355 152-41-33">
                 <label for="name" id="phone_2">Номер телефона</label>
 
               </div>
 
               <div class="footer__input">
                 <input required name="email" type="email" id="email" placeholder="Адрес электронной почты">
-                <!-- <label for="email">Адрес электронной почты</label> -->
+                
               </div>
 
               <div class="footer__input">
                 <input required name="name" type="text" id="company_name" placeholder="Название компании">
-                <!-- <label for="name">Название компании</label> -->
+                
               </div>
 
               <div class="footer__textarea">
@@ -404,9 +410,9 @@
               <div class="footer__triggers">
                 <button class="footer__btn">Отправить</button>
                 <div class="footer__policy" id="policy">
-
-                  <input required type="checkbox">
-                  <!-- <label for="checkbox"> -->
+                  
+                  <input required type="checkbox" id="checkbox1">
+                  <!-- <label for="checkbox1"> -->
                   <span>Нажимая на кнопку, вы даете согласие на отправку
                     и <a href="/policy.html">обработку своих персональных данных</a></span>
                   <!-- </label> -->

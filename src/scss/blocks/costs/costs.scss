@@ -90,6 +90,10 @@
       top: 5952px;
       border: 2px solid $ambience-white;
       background: $background-eternity;
+      &:hover {
+        border-color: $holland-red;
+        color: $holland-red;
+      }
     }
 
     img {
