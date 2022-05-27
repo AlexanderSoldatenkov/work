@@ -42,10 +42,12 @@ nav {
       text-align: right;
       color: $ambience-white;
       width: 157px;
+
       &:hover {
         color: $holland-red;
       }
     }
+
     a {
       text-decoration: none;
 
@@ -78,7 +80,7 @@ nav {
     margin-left: 20px;
     width: 26px;
     height: 22px;
-    
+
   }
 
   &__hr {
@@ -129,6 +131,12 @@ nav {
   height: 60%;
   cursor: pointer;
 
+  &:hover {
+    .hamburger__hover {
+      background-color: $holland-red;
+    }
+  }
+
   &::before {
     content: "";
     display: block;
@@ -138,28 +146,17 @@ nav {
     transform: translate(-21px, -16px);
     background-color: $balsamic-reduction
   }
-&__hover {
 
-  &:hover {
-    &:nth-child(odd) {
-      background-color: $holland-red;
-    }
-    &:nth-child(even) {
-      background-color: $holland-red;
-    }
-    }
-}
-  span {
+
+
+  &__hover {
     display: block;
     background-color: $ambience-white;
     width: 30px;
     height: 3px;
     margin-top: 8px;
-    
- 
-    
   }
- 
+
 
 }
 
@@ -201,9 +198,11 @@ nav {
     top: 25px;
     right: 25px;
     cursor: pointer;
+
     &:hover {
       color: $holland-red;
     }
+
     // background-color: $hidden-menu-text;
   }
 

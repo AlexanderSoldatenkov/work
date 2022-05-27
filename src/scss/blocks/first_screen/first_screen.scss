@@ -86,9 +86,19 @@
       &:first-child {
         margin-right: 20px;
       }
-      &:hover {
-        color: $holland-red;
-      }
+
+    }
+
+    // &:hover {
+    //   img svg path {
+    //     fill: $holland-red;
+    //   }
+
+    // }
+  }
+  &__arrows:hover {
+    img path {
+      fill: $holland-red;
     }
   }
 
