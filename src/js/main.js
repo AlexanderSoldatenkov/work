@@ -76,17 +76,17 @@ function onNavLinkClick(event) {
 }
 
 // $(document).ready(function () {
-// // Smooth scroll and page up
-// $(window).scroll(function () {
-//     if ($(this).scrollTop() > 1600) {
-//         $('.pageup').fadeIn();
-//     } else {
-//         $('.pageup').fadeOut();
-//     }
-// });
+// // // Smooth scroll and page up
+// // $(window).scroll(function () {
+// //     if ($(this).scrollTop() > 1600) {
+// //         $('.pageup').fadeIn();
+// //     } else {
+// //         $('.pageup').fadeOut();
+// //     }
+// // });
 
 
-// Mail sender
+// //Mail sender
 // $('form').submit(function (e) {
 //     e.preventDefault();
 
