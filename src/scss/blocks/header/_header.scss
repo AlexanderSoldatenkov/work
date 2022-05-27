@@ -80,7 +80,12 @@ nav {
     margin-left: 20px;
     width: 26px;
     height: 22px;
-
+    &_fill:hover {
+      svg path {
+        
+        fill: $holland-red;
+      }
+    }
   }
 
   &__hr {

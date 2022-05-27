@@ -105,9 +105,18 @@
     // }
   }
 
-  &__arrows:hover {
-    svg path {
-      fill: $holland-red;
+  &__arrows {
+    &_fill:hover {
+      // background-color: #fff;
+      svg path {
+        
+        fill: $holland-red;
+      }
+      
+
+
+
+
     }
   }
 
