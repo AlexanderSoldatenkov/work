@@ -18,6 +18,13 @@ nav {
   background: $background-eternity;
 }
 
+#menu__logo_img-hidden {
+  display: none;
+}
+#menu__icon-hidden {
+  display: none;
+}
+
 .menu {
 
 
@@ -31,6 +38,8 @@ nav {
   margin-left: 310px;
   list-style-type: none;
 
+
+  
   &__contacts {
     &_phone {
       margin-top: 43px;
