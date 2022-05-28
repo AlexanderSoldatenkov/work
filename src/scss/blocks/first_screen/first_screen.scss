@@ -81,14 +81,7 @@
 
   &__arrows {
     margin-top: 52px;
-
-    // img {
-    //  a svg {
-    //     path {
-    //       fill: $holland-red;
-    //     }
-    //   }
-    // }
+    text-decoration: none;
 
     img {
       &:first-child {
@@ -97,12 +90,6 @@
 
     }
 
-    // &:hover {
-    //   img svg path {
-    //     fill: $holland-red;
-    //   }
-
-    // }
   }
 
   &__arrows {

@@ -1022,11 +1022,11 @@
   // }
 }
 
+
 @media (max-width: 567px) {
   .costs {
     min-height: 1235px;
   }
-
   .services {
     &__columns {
       flex-wrap: wrap;
@@ -1041,11 +1041,6 @@
         height: 100%;
       }
     }
-  }
-}
-
-@media (max-width: 567px) {
-  .services {
 
     // &__head {
     //   height: 100%;
@@ -1133,6 +1128,7 @@
     &__logo_img {
       margin: 0 auto;
       margin-top: 37px;
+      margin-left: 0;
     }
 
     &__contacts_phone {
